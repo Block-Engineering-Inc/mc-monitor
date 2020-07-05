@@ -24,6 +24,12 @@ spec:
               name: data
             - mountPath: /etc/prometheus
               name: config
+          env: 
+          - name: USER
+            valueFrom:
+              secretKeyRef:
+                name: promcred
+                key: username
       volumes:
         - name: config
           configMap:
