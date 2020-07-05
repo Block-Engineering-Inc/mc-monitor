@@ -29,7 +29,7 @@ spec:
             valueFrom:
               secretKeyRef:
                 name: promcred
-                key: username
+                key: USER_NAME
       volumes:
         - name: config
           configMap:
