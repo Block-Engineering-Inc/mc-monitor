@@ -20,9 +20,7 @@ spec:
             - name: DEBUG
               value: "true"
             - name: EXPORT_SERVERS
-              value: mc.hypixel.net,play.cubecraft.net
-            - name: EXPORT_BEDROCK_SERVERS
-              value: play.fallentech.io
+              value: "35.247.245.118:25565"
           args:
             - export-for-prometheus
       restartPolicy: Always
